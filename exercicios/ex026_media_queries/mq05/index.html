@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body onresize="redimensionamento()">
+<body onresize="redimensionou()">
     <header>
         <h1>Meu Site</h1>
-        <i id="burger" class="material-icons" onclick="clickMenu()">menu</i>
+        <i id="burger" class="material-icons" onclick="clicou()">menu</i>
         <menu id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
@@ -31,7 +31,7 @@
         </article>
     </main>
     <script>
-        function redimensionamento() {
+        function redimensionou() {
             var itens = document.getElementById("itens");
             if (window.innerWidth >= 768) {
                 itens.style.display = 'block'
@@ -40,7 +40,7 @@
             }
         }
         
-        function clickMenu () {
+        function clicou() {
             var itens = document.getElementById("itens");
             if (itens.style.display == 'block') {
                 itens.style.display = 'none'
