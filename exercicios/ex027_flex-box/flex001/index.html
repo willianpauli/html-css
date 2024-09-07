@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container {
+            background-color: lightsalmon;
+            height: 400px;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: flex-start; /* funcionaria no nowrap */
+            justify-content: space-around;
+            align-content: space-evenly; /* se sobrepoe ao align itens quando wrap */
+
+            
+            /*
+            JUSTIFY-CONTENT: Vai alinhar os itens dentro do eixo principal; 
+            ALIGN-ITEMS: Alinha os itens no eixo transversal quando nowrap;   
+            ALIGN-CONTENT: Alinha os itens no eixo transversal quando wrap;
+            
+          
+            /* existem quatro configurações permitidas no flex-direction: 
+            - row:             
+            cross-axis v > main-axis
+
+            - row-reverse: 
+            main-axis < v cross-axis
+             
+            - column: 
+            cross-axis >
+            main-axis v 
+
+            - column reverse:
+            cross-axis > ^ main-axis
+            */
+        }
+
+        div.item {
+            background-color: lightblue;
+            border: 1px solid black;
+            padding: 40px;
+                     
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+    </div>
+</body>
+</html>
